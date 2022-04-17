@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="registeruser" class="com.lithan.mp3.action.RegisterAction">
+			<result name="REGISTER">/registers.jsp</result>
+		</action>
+		
+		<action name="mylogin" class="com.lithan.mp3.action.LoginAction">
+			<result name="SUCCESS">/admins.jsp</result>
+			<result name="INPUT">/logins.jsp</result>
+			<result name="ERROR">/logine.jsp</result>
+		</action>
+		
+		<action name="report" class="com.lithan.mp3.action.ReportAction">
+			<result name="REPORT">/report.jsp</result>
+		</action>
+		
+		<action name="dashboard" class="com.lithan.mp3.action.DashboardAction">
+			<result name="SUCCESS">/dashboard.jsp</result>
+		</action>
+		
+		<action name="admin" class="com.lithan.mp3.action.AdminAction">
+			<result name="SUCCESS">/admin.jsp</result>
+		</action>
+		
+		<action name="updatedetails" class="com.lithan.mp3.action.UpdateAction">
+			<result name="UPDATE">/update.jsp</result>
+		</action>
+		<action name="deleterecord" class="com.lithan.mp3.action.DeleteAction">
+			<result name="DELETE">/delete.jsp</result>
+		</action>
+	</package>
+</struts>
